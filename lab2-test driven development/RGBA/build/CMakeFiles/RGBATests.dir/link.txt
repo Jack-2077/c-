@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/RGBATests.dir/tests/RGBATests.cpp.o  -o RGBATests /home/ubuntu/environment/vcpkg/packages/gtest_x64-linux/debug/lib/libgtest.a /home/ubuntu/environment/vcpkg/packages/gtest_x64-linux/debug/lib/manual-link/libgtest_main.a /home/ubuntu/environment/vcpkg/packages/gtest_x64-linux/debug/lib/libgtest.a -lpthread 

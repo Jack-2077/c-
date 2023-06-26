@@ -4,6 +4,10 @@
 
 - Avoid Modification: By using const std::string&, you indicate that the parameter will not be modified
  
- 2.Generating CMake and Make builds
+ 2.Generating CMake and Make builds on windows
 
 - cmake -G "MinGW Makefiles" <src> && make
+
+ 2.Generating CMake and Make builds on linux (ubuntu)
+ 
+ -cmake -DCMAKE_PREFIX_PATH="pkg_src" "src"
