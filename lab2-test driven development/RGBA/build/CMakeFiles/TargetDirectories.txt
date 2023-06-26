@@ -1,5 +1,0 @@
-/home/ubuntu/environment/cpp/lab2-test driven development/RGBA/build/CMakeFiles/rebuild_cache.dir
-/home/ubuntu/environment/cpp/lab2-test driven development/RGBA/build/CMakeFiles/edit_cache.dir
-/home/ubuntu/environment/cpp/lab2-test driven development/RGBA/build/CMakeFiles/RGBA.dir
-/home/ubuntu/environment/cpp/lab2-test driven development/RGBA/build/CMakeFiles/test.dir
-/home/ubuntu/environment/cpp/lab2-test driven development/RGBA/build/CMakeFiles/RGBATests.dir

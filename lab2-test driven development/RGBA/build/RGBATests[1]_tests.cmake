@@ -1,1 +1,0 @@
-set( RGBATests_TESTS)
