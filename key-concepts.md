@@ -10,4 +10,4 @@
 
  2.Generating CMake and Make builds on linux (ubuntu)
  
- -cmake -DCMAKE_PREFIX_PATH="pkg_src" "src"
+ - cmake -DCMAKE_PREFIX_PATH="pkg_src" "src"
