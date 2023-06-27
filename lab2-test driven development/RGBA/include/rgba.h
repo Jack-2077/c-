@@ -17,6 +17,8 @@ struct RGBA{
     RGBA(unsigned char _r, unsigned char _g, unsigned char _b, unsigned char _a);
     
     void set(unsigned char _r, unsigned char _g, unsigned char _b, unsigned char _a);
+    
+    void clamp(unsigned char _min, unsigned char _max);
 };
 
  RGBA:: RGBA() : r(0), g(0), b(0), a(0) {}
@@ -43,4 +45,11 @@ void RGBA:: set(unsigned char _r, unsigned char _g, unsigned char _b, unsigned c
     a = _a;
 } 
 
+
+void RGBA:: clamp(unsigned char _min, unsigned char _max){
+    r = std::clamp(r, _min, _max);
+    g = std::clamp(g, _min, _max);
+    b = std::clamp(b, _min, _max);
+    a = std::clamp(a, _min, _max);
+}
 #endif

@@ -48,7 +48,7 @@ TEST(RGBA, ConstructorWithValues) {
 }
 
 // Test the set function with specific color values
-TEST(RGBA, SETWithValues) {
+TEST(RGBA, SetWithValues) {
   RGBA color; 
   unsigned char r = 255, g = 128, b = 0, a = 255;
   
@@ -59,3 +59,26 @@ TEST(RGBA, SETWithValues) {
   ASSERT_TRUE(color.b == b);
   ASSERT_TRUE(color.a == a);
 }
+
+// Test the clamp function with specific color values and range
+TEST(RGBA, ClampFunction) {
+  RGBA color(100, 200, 50, 150);
+  unsigned char min = 0, max = 127;
+  
+  color.clamp(min, max);
+
+  ASSERT_GE(color.r, min);
+  ASSERT_LE(color.r, max);
+  ASSERT_GE(color.g, min);
+  ASSERT_LE(color.g, max);
+  ASSERT_GE(color.b, min);
+  ASSERT_LE(color.b, max);
+  ASSERT_GE(color.a, min);
+  ASSERT_LE(color.a, max);
+}
+
+
+
+
+
+
