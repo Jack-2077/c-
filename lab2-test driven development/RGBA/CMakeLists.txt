@@ -14,12 +14,16 @@ set(CMAKE_CXX_STANDARD 17)
 # Now we add our target executable and the file it is built from
 add_executable(RGBA src/main.cpp)
 
+target_include_directories(RGBA PRIVATE include)
+
 # Find GTest package
 find_package(GTest CONFIG REQUIRED)
 include(GoogleTest)
 
 # Add RGBATests executable and source files
 add_executable(RGBATests tests/RGBATests.cpp)
+
+target_include_directories(RGBATests PRIVATE include)
 
 # Link GTest libraries to RGBATests
 target_link_libraries(RGBATests PRIVATE GTest::gtest GTest::gtest_main)
