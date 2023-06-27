@@ -35,3 +35,27 @@ ASSERT_TRUE(copy.b == original.b);
 ASSERT_TRUE(copy.a == original.a);
 
 }
+
+// Test constructor with specific color values
+TEST(RGBA, ConstructorWithValues) {
+  unsigned char r = 255, g = 128, b = 0, a = 255;
+  RGBA color(r, g, b, a);
+
+  ASSERT_TRUE(color.r == r);
+  ASSERT_TRUE(color.g == g);
+  ASSERT_TRUE(color.b == b);
+  ASSERT_TRUE(color.a == a);
+}
+
+// Test the set function with specific color values
+TEST(RGBA, SETWithValues) {
+  RGBA color; 
+  unsigned char r = 255, g = 128, b = 0, a = 255;
+  
+  color.set(r, g, b, a);
+
+  ASSERT_TRUE(color.r == r);
+  ASSERT_TRUE(color.g == g);
+  ASSERT_TRUE(color.b == b);
+  ASSERT_TRUE(color.a == a);
+}

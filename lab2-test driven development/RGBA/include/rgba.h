@@ -13,6 +13,10 @@ struct RGBA{
     RGBA();
     
     RGBA(const RGBA &color);
+    
+    RGBA(unsigned char _r, unsigned char _g, unsigned char _b, unsigned char _a);
+    
+    void set(unsigned char _r, unsigned char _g, unsigned char _b, unsigned char _a);
 };
 
  RGBA:: RGBA() : r(0), g(0), b(0), a(0) {}
@@ -23,5 +27,20 @@ struct RGBA{
         b(color.b),
         a(color.a)
     {}
+    
+RGBA:: RGBA(unsigned char _r, unsigned char _g, unsigned char _b, unsigned char _a): 
+          r(_r), 
+          g(_g), 
+          b(_b), 
+          a(_a) 
+   {}  
+   
+void RGBA:: set(unsigned char _r, unsigned char _g, unsigned char _b, unsigned char _a){
+    
+    r = _r;
+    g = _g;
+    b = _b;
+    a = _a;
+} 
 
 #endif
