@@ -19,5 +19,5 @@
 - libraries can be imported into h file, for eg: <string> for using std::string
 
 - when using initializer lists, {} or () can be used and the format is ```className :: className(_x, _y): x(_x), y(_y){}```
-- 
+
 - when implementing functions, format is ```RETURN_TYPE className :: fnName(_params){}```
