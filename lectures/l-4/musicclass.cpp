@@ -18,7 +18,9 @@ int main(){
     std::cout << m2.getGenre() << " " << m2.getArtist() << " " << m2.getAlbum() << " " << m2.getYear() << std::endl;
     
     std::cout << m3.getGenre() << " " << m3.getArtist() << " " << m3.getAlbum() << " " << m3.getYear() << std::endl;
+    
     std::cout << m4.getGenre() << " " << m4.getArtist() << " " << m4.getAlbum() << " " << m4.getYear() << std::endl;
+    
     std::cout << m5.getGenre() << " " << m5.getArtist() << " " << m5.getAlbum() << " " << m5.getYear() << std::endl;
  
     
