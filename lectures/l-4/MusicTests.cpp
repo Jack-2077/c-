@@ -22,6 +22,15 @@ TEST(Music, copyCtor){
     
 }
 
+TEST(Music, moveOperator){
+     Music m1("Pop Rap", "Jaden", "Syre", 2020 );
+     Music m3(std::move(m1))
+     
+    EXPECT_TRUE(m1.getGenre().empty());
+    EXPECT_EQ(m1.getArtist().empty());
+    EXPECT_EQ(m1.getAlbum().empty());
+}
+
 
 int main(int argc, char** argv) {
     ::testing::InitGoogleTest(&argc, argv);
